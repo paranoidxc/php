@@ -39,6 +39,10 @@ func String2Uint(str string) (uint, error) {
 	return uintNum, nil
 }
 
+func Uint2String(num uint) string {
+	return strconv.FormatUint(uint64(num), 10)
+}
+
 func Float642String(num float64) string {
 	return strconv.FormatFloat(num, 'f', -1, 64)
 }
